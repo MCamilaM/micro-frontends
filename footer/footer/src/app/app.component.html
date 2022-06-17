@@ -1,0 +1,32 @@
+
+  <div class="container mb-5 mt-5">
+    <div class="row" >
+      <div class="col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-3 offset-lg-0" *ngFor="let pais of paises">
+        <div class="profile-card card rounded-lg shadow p-4 p-xl-5 mb-4 text-center position-relative overflow-hidden">
+          <div class="banner"></div>
+          <img [src]="pais.flags.png" alt="" class="img-circle mx-auto mb-3">
+          <div class="titulos">
+          <h5 class="mb-3">Name: {{pais.name.common}}</h5>
+          <h5 class="mb-3">Population: {{pais.population}}</h5>
+          <h5 class="mb-3">continent: {{pais.continents}}</h5>
+          <h5 class="mb-3">Capital: {{pais.capital}}</h5>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <div class="container mb-5 mt-5">
+    <div class="row" >
+  <div class="card" style="width:20rem;" *ngFor="let pais of paises">
+    <img class="card-img-top img-fluid" [src]="pais.flags.png" alt="card image">
+    <div class="card-body">
+    <h6 class="card-title">{{pais.name.common}}</h6>
+    <p class="card-text">Population: {{pais.population}}</p>
+    <p class="card-text">continent: {{pais.continents}}</p>
+    <p class="card-text">Capital: {{pais.capital}}</p>
+    </div>
+</div>
+</div> -->
+
